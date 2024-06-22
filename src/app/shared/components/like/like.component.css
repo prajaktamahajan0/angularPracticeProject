@@ -1,0 +1,7 @@
+i{
+    color: #aaa;
+    cursor: pointer;
+}
+i.liked {
+   color: rgb(202, 29, 58) !important;
+}

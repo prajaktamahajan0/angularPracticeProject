@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let reel of reelsArray">
+      <div class="card">
+        <div class="card-header">
+          {{reel.title}}
+        </div>
+        <div class="card-body">
+          <app-like (emitliked)="onLikeStateUpdate($event, reel.id)" [getLikedState]="reel.isLike"></app-like>
+          <span class="ml-2">{{reel.likeCount}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
